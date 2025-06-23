@@ -14,6 +14,10 @@ import java.util.List;
 @FeignClient("QUESTION-SERVICE")
 public interface FeignConfig {
 
+    /**
+     * Contains the Methods of the Controller from Other
+     * MicroServices to connect through OpenFeign
+     */
     @GetMapping("/question/getQuestionsIdsForQuiz")
     public ResponseEntity<List<Integer>> generateQuestions(@RequestParam String category, @RequestParam Integer limit);
 

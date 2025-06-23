@@ -8,6 +8,12 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @EnableFeignClients
 public class QuizServiceApplication {
 
+    /**
+     * EnableFeignClients is used to connect to the other
+     * MicroServices Registered in Eureka Client
+     */
+
+
     public static void main(String[] args) {
         SpringApplication.run(QuizServiceApplication.class, args);
     }
